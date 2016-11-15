@@ -14,7 +14,7 @@ dbData.offices.forEach(office => {
     name: office.name,
     url: office.url,
     street: office.street,
-    ciy: office.city,
+    city: office.city,
     state: office.state,
     zip: office.zip,
     phone: office.phone,
@@ -28,7 +28,7 @@ dbData.offices.forEach(office => {
     console.log('adding county ', county.name);
     countyKeysPerOffice.push(countiesRef.push({
       name: county.name,
-      countyId: officeRef.key
+      officeId: officeRef.key
     }).key);
 
   });

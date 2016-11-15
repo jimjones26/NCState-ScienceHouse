@@ -103,6 +103,101 @@ export const dbData = {
           ]
         }
       ]
+    },
+    {
+      'name': 'Northwest Satellite Office',
+      'url': 'https://sciencehouse.ncsu.edu/satellite-offices/northwest-satellite-office/',
+      'street': '1914 Hickory Blvd NW',
+      'city': 'Lenoir',
+      'state': 'North Carolina',
+      'zip': '28645',
+      'phone': '8283286183',
+      'fax': '',
+      'employees': [
+        {}
+      ],
+      'counties': [
+        {
+          'name': 'Caldwell',
+          'schoolDistricts': [
+            {
+              'districtName': 'Caldwell County Schools',
+              'districtSchools': [
+                {
+                  'school': [
+                    {
+                      'schoolName': 'Baton Elementary',
+                      'address': [
+                        {
+                          'street': '1400 Baton School Road',
+                          'city': 'Granite Falls',
+                          'state': 'North Carolina',
+                          'zip': '28630'
+                        }
+                      ],
+                      'phone': '8287289531',
+                      'fax': '8287287548'
+                    },
+                    {
+                      'schoolName': 'Davenport Elementary',
+                      'address': [
+                        {
+                          'street': '901 College Avenue SW',
+                          'city': 'Lenoir',
+                          'state': 'North Carolina',
+                          'zip': '28645'
+                        }
+                      ],
+                      'phone': '8287546941',
+                      'fax': '8287585034'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Catawba',
+          'schoolDistricts': [
+            {
+              'districtName': 'Catawba County School District',
+              'districtSchools': [
+                {
+                  'school': [
+                    {
+                      'schoolName': 'Balls Creek Elementary School',
+                      'address': [
+                        {
+                          'street': '2620 Balls Creek School Road',
+                          'city': 'Newton',
+                          'state': 'North Carolina',
+                          'zip': '28658'
+                        }
+                      ],
+                      'phone': '8284644766 ',
+                      'fax': '8284645396'
+                    },
+                    {
+                      'schoolName': 'Banoak Elementary School',
+                      'address': [
+                        {
+                          'street': '7651 West NC 10 Highway',
+                          'city': 'Vale',
+                          'state': 'North Carolina',
+                          'zip': '28168'
+                        }
+                      ],
+                      'phone': '7044622849',
+                      'fax': ''
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 };
