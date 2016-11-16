@@ -7,22 +7,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule } from 'angularFire2/index';
 import { firebaseConfig } from '../../src/environments/firebase.config';
 
+import { OfficesService } from './shared/model/offices.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        AngularFireModule.initializeApp(firebaseConfig),
-        NgbModule.forRoot()
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    NgbModule.forRoot()
+  ],
+  providers: [OfficesService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
