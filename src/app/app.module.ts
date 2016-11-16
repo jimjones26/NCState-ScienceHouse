@@ -4,8 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { AngularFireModule } from 'angularFire2/index';
 import { firebaseConfig } from '../../src/environments/firebase.config';
+import { AngularFireModule } from 'angularFire2/index';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/do';
 
 import { OfficesService } from './shared/model/offices.service';
 

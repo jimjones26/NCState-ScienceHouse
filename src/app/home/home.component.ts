@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { OfficesService } from '../shared/model/offices.service';
+import { Office } from '../shared/model/office';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +9,14 @@ import { OfficesService } from '../shared/model/offices.service';
 })
 export class HomeComponent implements OnInit {
 
+  offices: Office[];
+
   constructor(private officesService: OfficesService) { }
 
   ngOnInit() {
+    this.officesService.findAllOffices()
+      .do(console.log)
+      .subscribe(offices => this.offices = offices);
   }
 
 }

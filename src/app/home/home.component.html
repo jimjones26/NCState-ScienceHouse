@@ -1,13 +1,13 @@
 <h2>All Offices</h2>
-<h4> Total # of Offices: TODO</h4>
+<h4> Total # of Offices: {{offices?.length}}</h4>
 
 <input placeholder="Search" />
 
 <table>
   <tbody>
-    <tr>
-      <td>TODO</td>
-      <td>Name</td>
+    <tr *ngFor="let office of offices">
+      <td>{{office.name}}</td>
+      <td>{{office.url}}</td>
     </tr>
   </tbody>
 </table>
