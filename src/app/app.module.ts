@@ -14,11 +14,13 @@ import { OfficesService } from './shared/model/offices.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { OfficesListComponent } from './offices-list/offices-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    OfficesListComponent
   ],
   imports: [
     BrowserModule,

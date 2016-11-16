@@ -3,11 +3,4 @@
 
 <input placeholder="Search" />
 
-<table>
-  <tbody>
-    <tr *ngFor="let office of offices">
-      <td>{{office.name}}</td>
-      <td>{{office.url}}</td>
-    </tr>
-  </tbody>
-</table>
+<app-offices-list [offices]="offices"></app-offices-list>
