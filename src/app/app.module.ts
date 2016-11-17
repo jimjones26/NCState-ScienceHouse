@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { routerConfig } from './router.config';
 
 import { firebaseConfig } from '../../src/environments/firebase.config';
 import { AngularFireModule } from 'angularFire2/index';
@@ -27,6 +29,7 @@ import { OfficesListComponent } from './offices-list/offices-list.component';
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    RouterModule.forRoot(routerConfig),
     NgbModule.forRoot()
   ],
   providers: [OfficesService],
