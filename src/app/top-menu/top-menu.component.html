@@ -1,3 +1,20 @@
-<p>
-  top-menu works!
-</p>
+<nav class="navbar navbar-full navbar-dark bg-primary">
+  <a class="navbar-brand" routerLink="home">TSH</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="test" routerLinkActive="active">Offices</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home">Counties</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home">Districts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home">Schools</a>
+    </li>
+  </ul>
+</nav>
