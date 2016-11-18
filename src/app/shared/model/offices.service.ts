@@ -9,7 +9,7 @@ export class OfficesService {
   constructor(private af: AngularFire) { }
 
   findAllOffices(): Observable<Office[]> {
-    return this.af.database.list('offices');
+    return this.af.database.list('offices').map(Office.fromJsonArray);
   }
 
 }
