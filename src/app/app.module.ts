@@ -18,13 +18,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { OfficesListComponent } from './offices-list/offices-list.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { OfficesComponent } from './offices/offices.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OfficesListComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    OfficesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<h2>All Offices</h2>
+<h4> Total # of Offices: {{allOffices?.length}}</h4>
+
+<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
+
+<app-offices-list [offices]="filtered"></app-offices-list>

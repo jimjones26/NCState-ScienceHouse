@@ -1,13 +1,13 @@
 import { Route } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { OfficesListComponent } from './offices-list/offices-list.component';
+import { OfficesComponent } from './offices/offices.component';
 
 export const routerConfig: Route[] = [
   {
     path: 'home', component: HomeComponent
   },
   {
-    path: 'test', component: OfficesListComponent
+    path: 'offices', component: OfficesComponent
   },
   {
     path: '', redirectTo: 'home', pathMatch: 'full'

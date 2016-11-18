@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OfficesService } from '../shared/model/offices.service';
-import { Office } from '../shared/model/office';
 
 @Component({
   selector: 'app-home',
@@ -9,19 +7,10 @@ import { Office } from '../shared/model/office';
 })
 export class HomeComponent implements OnInit {
 
-  allOffices: Office[];
-  filtered: Office[];
-
-  constructor(private officesService: OfficesService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.officesService.findAllOffices()
-      .do(console.log)
-      .subscribe(offices => this.allOffices = this.filtered = offices);
-  }
 
-  search(search: string) {
-    this.filtered = this.allOffices.filter(office => office.name.toUpperCase().includes(search.toUpperCase()));
   }
 
 }
