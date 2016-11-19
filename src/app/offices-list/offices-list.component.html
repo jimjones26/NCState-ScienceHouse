@@ -1,8 +1,10 @@
-<table>
-  <tbody>
-    <tr *ngFor="let office of offices">
-      <td>{{office.name}}</td>
-      <td>{{office.url}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let office of offices">
+        <td>{{office.name}}</td>
+        <td>{{office.url}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
