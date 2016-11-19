@@ -1,10 +1,10 @@
-import { NCStateScienceHousePage } from './app.po';
+import { NcstateScienceHousePage } from './app.po';
 
 describe('ncstate-science-house App', function() {
-  let page: NCStateScienceHousePage;
+  let page: NcstateScienceHousePage;
 
   beforeEach(() => {
-    page = new NCStateScienceHousePage();
+    page = new NcstateScienceHousePage();
   });
 
   it('should display message saying app works', () => {

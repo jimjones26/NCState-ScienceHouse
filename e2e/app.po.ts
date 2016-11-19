@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class NCStateScienceHousePage {
+export class NcstateScienceHousePage {
   navigateTo() {
     return browser.get('/');
   }
