@@ -13,6 +13,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 
 import { OfficesService } from './shared/model/offices.service';
+import { CountiesService } from './shared/model/counties.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -38,7 +39,10 @@ import { CountiesComponent } from './counties/counties.component';
     RouterModule.forRoot(routerConfig),
     NgbModule.forRoot()
   ],
-  providers: [OfficesService],
+  providers: [
+    OfficesService,
+    CountiesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

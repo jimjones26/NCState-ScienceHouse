@@ -1,3 +1,14 @@
-<p>
-  counties works!
-</p>
+<h2>All Counties</h2>
+<h4> Total # of Counties: {{allCounties?.length}}</h4>
+
+<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let county of allCounties">
+        <td>{{county.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

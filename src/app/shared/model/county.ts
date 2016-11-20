@@ -1,6 +1,6 @@
 export class County {
 
-  static fromJson($key, name) {
+  static fromJson({$key, name}) {
     return new County($key, name);
   }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CountiesService } from '../shared/model/counties.service';
+import { County } from '../shared/model/county';
 
 @Component({
   selector: 'app-counties',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountiesComponent implements OnInit {
 
-  constructor() { }
+  allCounties: County[];
+  filtered: County[];
+
+  constructor( private countiesService: CountiesService) { }
 
   ngOnInit() {
+    this.countiesService.findAllCounties()
+      .subscribe(counties => this.allCounties = this.filtered = counties);
+  }
+
+  search(search: string) {
+    this.filtered = this.allCounties.filter(county => county.name.toUpperCase().includes(search.toUpperCase()));
   }
 
 }
