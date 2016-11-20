@@ -20,6 +20,7 @@ export class CountiesComponent implements OnInit {
   }
 
   search(search: string) {
+    console.log('search working');
     this.filtered = this.allCounties.filter(county => county.name.toUpperCase().includes(search.toUpperCase()));
   }
 
