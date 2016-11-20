@@ -16,7 +16,7 @@ export class OfficesComponent implements OnInit {
 
   ngOnInit() {
     this.officesService.findAllOffices()
-      .do(console.log)
+      // .do(console.log)
       .subscribe(offices => this.allOffices = this.filtered = offices);
   }
 
