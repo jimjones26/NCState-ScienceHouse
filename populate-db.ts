@@ -9,13 +9,18 @@ const countiesReference = database().ref('counties');
 const districtsReference = database().ref('districts');
 const schoolsReference = database().ref('schools');
 
-
-
 dbData.offices.forEach(office => {
   // push offices
   console.log('Adding office', office.name);
   officesReference.push({
-    name: office.name
+    name: office.name,
+    url: office.url,
+    street: office.street,
+    city: office.city,
+    state: office.state,
+    zip: office.zip,
+    phone: office.phone,
+    fax: office.fax
   }).then((officeSnapshot) => {
 
     office.counties.forEach(county => {
@@ -72,6 +77,12 @@ dbData.offices.forEach(office => {
 
               schoolsReference.push({
                 name: school.name,
+                street: school.street,
+                city: school.city,
+                state: school.state,
+                zip: school.zip,
+                phone: school.phone,
+                fax: school.fax,
                 districtId: districtSnapshot.key
               }).then((schoolSnapshot) => {
 
