@@ -29,7 +29,7 @@ export const dbData = {
               'name': 'Cherokee County Schools',
               'schools': [
                 {
-                  'schoolName': 'Andrews Elementary School',
+                  'name': 'Andrews Elementary School',
                   'street': '205 Jean Christy Avenue',
                   'city': 'Andrews',
                   'state': 'North Carolina',
@@ -38,7 +38,7 @@ export const dbData = {
                   'fax': '8283210401'
                 },
                 {
-                  'schoolName': 'Andrews High School',
+                  'name': 'Andrews High School',
                   'street': '50 High School Dr',
                   'city': 'Andrews',
                   'state': 'North Carolina',
@@ -57,7 +57,7 @@ export const dbData = {
               'name': 'Clay County School District',
               'schools': [
                 {
-                  'schoolName': 'Hayesville Elementary School',
+                  'name': 'Hayesville Elementary School',
                   'street': '72 Elementary School Drive',
                   'city': 'Hayesville',
                   'state': 'North Carolina',
@@ -66,7 +66,7 @@ export const dbData = {
                   'fax': '8283893243'
                 },
                 {
-                  'schoolName': 'Hayesville High School',
+                  'name': 'Hayesville High School',
                   'street': '205 Yellow Jacket Drive',
                   'city': 'Hayesville',
                   'state': 'North Carolina',
@@ -100,7 +100,7 @@ export const dbData = {
               'name': 'Caldwell County Schools',
               'schools': [
                 {
-                  'schoolName': 'Baton Elementary',
+                  'name': 'Baton Elementary',
                   'street': '1400 Baton School Road',
                   'city': 'Granite Falls',
                   'state': 'North Carolina',
@@ -109,7 +109,7 @@ export const dbData = {
                   'fax': '8287287548'
                 },
                 {
-                  'schoolName': 'Davenport Elementary',
+                  'name': 'Davenport Elementary',
                   'street': '901 College Avenue SW',
                   'city': 'Lenoir',
                   'state': 'North Carolina',
@@ -128,7 +128,7 @@ export const dbData = {
               'name': 'Catawba County School District',
               'schools': [
                 {
-                  'schoolName': 'Balls Creek Elementary School',
+                  'name': 'Balls Creek Elementary School',
                   'street': '2620 Balls Creek School Road',
                   'city': 'Newton',
                   'state': 'North Carolina',
@@ -137,7 +137,7 @@ export const dbData = {
                   'fax': '8284645396'
                 },
                 {
-                  'schoolName': 'Banoak Elementary School',
+                  'name': 'Banoak Elementary School',
                   'street': '7651 West NC 10 Highway',
                   'city': 'Vale',
                   'state': 'North Carolina',
@@ -171,7 +171,7 @@ export const dbData = {
               'name': 'Carteret County Public Schools',
               'schools': [
                 {
-                  'schoolName': 'Atlantic Elementary School',
+                  'name': 'Atlantic Elementary School',
                   'street': '151 School Drive',
                   'city': 'Atlantic',
                   'state': 'North Carolina',
@@ -180,7 +180,7 @@ export const dbData = {
                   'fax': '2522251077'
                 },
                 {
-                  'schoolName': 'Beaufort Elementary School',
+                  'name': 'Beaufort Elementary School',
                   'street': '110 Carraway Drive',
                   'city': 'Beaufort',
                   'state': 'North Carolina',
@@ -199,7 +199,7 @@ export const dbData = {
               'name': 'Craven County Schools',
               'schools': [
                 {
-                  'schoolName': 'A. H. Bangert Elementary School',
+                  'name': 'A. H. Bangert Elementary School',
                   'street': '3712 Canterbury Rd',
                   'city': 'New Bern',
                   'state': 'North Carolina',
@@ -208,7 +208,7 @@ export const dbData = {
                   'fax': '2525146418'
                 },
                 {
-                  'schoolName': 'Arthur W. Edwards Elementary School',
+                  'name': 'Arthur W. Edwards Elementary School',
                   'street': '200 Education Ln',
                   'city': 'Havelock',
                   'state': 'North Carolina',
