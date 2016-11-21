@@ -1,7 +1,7 @@
 export class County {
 
-  static fromJson({$key, name}) {
-    return new County($key, name);
+  static fromJson({$key, name, officeId}) {
+    return new County($key, name, officeId);
   }
 
   static fromJsonArray(json: any[]): County[] {
@@ -10,7 +10,8 @@ export class County {
 
   constructor(
     public $key: string,
-    public name: string
+    public name: string,
+    public officeId: string
   ) { }
 
 }
