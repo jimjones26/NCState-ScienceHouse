@@ -4,108 +4,97 @@ import { dbData } from './db-data';
 
 initializeApp(firebaseConfig);
 
-
-
-
-
-
-// for each parent node
-// 1. create a reference var to the spot in firebase I want the data pushed to
-// 2. create an object that maps data from my data file to nodes in the db
-// 3. take that object and push to database through firebase node reference variable
-// 4. on each push, save the firebase key that was created, which will be used in association node
-
-
-
-
 const officesReference = database().ref('offices');
 const countiesReference = database().ref('counties');
 const districtsReference = database().ref('districts');
 const schoolsReference = database().ref('schools');
 
 
+
 dbData.offices.forEach(office => {
   // push offices
+  console.log('Adding office', office.name);
   officesReference.push({
     name: office.name
-  })
-    .then((snap) => {
-      office.counties.forEach(county => {
-        // push counties
-        countiesReference.push({
-          name: county.name,
-          officeId: snap.key
-        })
-          .then((snap2) => {
-            county.districts.forEach(district => {
-              // push districts
-              districtsReference.push({
-                name: district.name,
-                countyId: snap2.key
-              })
-                .then((snap3) => {
-                  district.schools.forEach(school => {
-                    // push schools
-                    schoolsReference.push({
-                      name: school.name,
-                      districtId: snap3.key
-                    });
-                  });
+  }).then((officeSnapshot) => {
+
+    office.counties.forEach(county => {
+      // push counties
+      console.log('-- Adding county ' + county.name + ' to ' + office.name);
+
+      countiesReference.push({
+        name: county.name,
+        officeId: officeSnapshot.key
+      }).then((countySnapshot) => {
+
+        // create association node
+        let countyKeysPerOffice = [];
+
+        countyKeysPerOffice.push(countySnapshot.key);
+
+        const association = database().ref('countiesPerOffice');
+        const countiesPerOffice = association.child(officeSnapshot.key);
+
+        countyKeysPerOffice.forEach(countyKey => {
+          console.log('adding county to office');
+          const countyOfficeAssociation = countiesPerOffice.child(countyKey);
+          countyOfficeAssociation.set(true);
+        });
+        // end create association node
+
+        county.districts.forEach(district => {
+          // push districts
+          console.log('---- Adding district ' + district.name + ' to ' + county.name);
+
+          districtsReference.push({
+            name: district.name,
+            countyId: countySnapshot.key
+          }).then((districtSnapshot) => {
+
+            // create association node
+            let districtKeysPerCounty = [];
+
+            districtKeysPerCounty.push(districtSnapshot.key);
+
+            const association2 = database().ref('districtsPerCounty');
+            const districtsPerCounty = association2.child(countySnapshot.key);
+
+            districtKeysPerCounty.forEach(districtKey => {
+              console.log('---- adding district to county');
+              const districtCountyAssociation = districtsPerCounty.child(districtKey);
+              districtCountyAssociation.set(true);
+            });
+            // end create association node
+
+            district.schools.forEach(school => {
+              // push schools
+              console.log('---------- Adding school ' + school.name + ' to ' + district.name);
+
+              schoolsReference.push({
+                name: school.name,
+                districtId: districtSnapshot.key
+              }).then((schoolSnapshot) => {
+
+                // create association node
+                let schoolKeysPerDistrict = [];
+
+                schoolKeysPerDistrict.push(schoolSnapshot.key);
+
+                const association3 = database().ref('schoolsPerDistrict');
+                const schoolsPerDistrict = association3.child(districtSnapshot.key);
+
+                schoolKeysPerDistrict.forEach(schoolKey => {
+                  console.log('---------- adding school to district');
+                  const schoolDistrictAssociation = schoolsPerDistrict.child(schoolKey);
+                  schoolDistrictAssociation.set(true);
                 });
+                // end create association node
+
+              });
             });
           });
+        });
       });
     });
+  });
 });
-
-
-
-
-
-
-/*dbData.offices.forEach(office => {
-
-  // push offices
-  console.log('adding office', office.name);
-  const officeRef = officesRef.push({
-    name: office.name, url: office.url, street: office.street,
-    city: office.city, state: office.state, zip: office.zip, phone: office.phone, fax: office.fax
-  });
-
-  // push counties listed under each office
-  let countyKeysPerOffice = [];
-
-  office.counties.forEach(county => {
-
-    console.log('adding county ', county.name);
-    countyKeysPerOffice.push(countiesRef.push({
-      name: county.name,
-      officeId: officeRef.key
-    }).key);
-
-    // push districts listed under each county
-    let districtKeysPerCounty = [];
-
-    county.districts.forEach(district => {
-      console.log('addin district ', district.name);
-      districtKeysPerCounty.push(districtsRef.push({
-        name: district.name,
-        // countyId:
-      }).key);
-      console.log('WHAT', countyKeysPerOffice);
-    });
-
-  });
-
-  const association = database().ref('countiesPerOffice');
-  const countiesPerOffice = association.child(officeRef.key);
-
-  countyKeysPerOffice.forEach(countyKey => {
-
-    console.log('adding county to office ');
-    const countyOfficeAssociation = countiesPerOffice.child(countyKey);
-    countyOfficeAssociation.set(true);
-  });
-
-});
-*/
