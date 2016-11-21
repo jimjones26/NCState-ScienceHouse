@@ -15,6 +15,7 @@ import 'rxjs/add/operator/do';
 import { OfficesService } from './shared/model/offices.service';
 import { CountiesService } from './shared/model/counties.service';
 import { DistrictsService } from './shared/model/districts.service';
+import { SchoolsService } from './shared/model/schools.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -45,7 +46,8 @@ import { DistrictsComponent } from './districts/districts.component';
   providers: [
     OfficesService,
     CountiesService,
-    DistrictsService
+    DistrictsService,
+    SchoolsService
   ],
   bootstrap: [AppComponent]
 })
