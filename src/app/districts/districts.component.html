@@ -1,3 +1,14 @@
-<p>
-  districts works!
-</p>
+<h2>All Districts</h2>
+<h4> Total # of Districts: {{allDistricts?.length}}</h4>
+
+<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let district of filtered">
+        <td>{{district.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
