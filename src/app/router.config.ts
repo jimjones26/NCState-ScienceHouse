@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OfficesComponent } from './offices/offices.component';
+import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
@@ -10,7 +11,15 @@ export const routerConfig: Route[] = [
     path: 'home', component: HomeComponent
   },
   {
-    path: 'offices', component: OfficesComponent
+    path: 'offices',
+    children: [
+      {
+        path: ':id', component: OfficeDetailComponent
+      },
+      {
+        path: '', component: OfficesComponent
+      }
+    ]
   },
   {
     path: 'counties', component: CountiesComponent
