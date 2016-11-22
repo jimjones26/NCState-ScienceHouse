@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { OfficesComponent } from './offices/offices.component';
 import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
+import { SchoolsComponent } from './schools/schools.component';
 
 export const routerConfig: Route[] = [
   {
@@ -16,6 +17,9 @@ export const routerConfig: Route[] = [
   },
   {
     path: 'districts', component: DistrictsComponent
+  },
+  {
+    path: 'schools', component: SchoolsComponent
   },
   {
     path: '', redirectTo: 'home', pathMatch: 'full'

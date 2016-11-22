@@ -24,6 +24,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { OfficesComponent } from './offices/offices.component';
 import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
+import { SchoolsComponent } from './schools/schools.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DistrictsComponent } from './districts/districts.component';
     TopMenuComponent,
     OfficesComponent,
     CountiesComponent,
-    DistrictsComponent
+    DistrictsComponent,
+    SchoolsComponent
   ],
   imports: [
     BrowserModule,
