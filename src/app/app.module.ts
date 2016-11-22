@@ -26,6 +26,7 @@ import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
 import { OfficeDetailComponent } from './office-detail/office-detail.component';
+import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { OfficeDetailComponent } from './office-detail/office-detail.component';
     CountiesComponent,
     DistrictsComponent,
     SchoolsComponent,
-    OfficeDetailComponent
+    OfficeDetailComponent,
+    SlugPipePipe
   ],
   imports: [
     BrowserModule,
