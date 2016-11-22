@@ -25,6 +25,7 @@ import { OfficesComponent } from './offices/offices.component';
 import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
+import { OfficeDetailComponent } from './office-detail/office-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SchoolsComponent } from './schools/schools.component';
     OfficesComponent,
     CountiesComponent,
     DistrictsComponent,
-    SchoolsComponent
+    SchoolsComponent,
+    OfficeDetailComponent
   ],
   imports: [
     BrowserModule,
