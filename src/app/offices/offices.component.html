@@ -1,6 +1,18 @@
 <h2>All Offices</h2>
-<h4> Total # of Offices: {{allOffices?.length}}</h4>
+<h4> Total # of Offices: {{(offices$ | async)?.length}}</h4>
 
-<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
+<!-- <input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>-->
 
-<app-offices-list [offices]="filtered"></app-offices-list>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let office of (offices$ | async)">
+        <td>{{office.name}}</td>
+        <td>{{office.url}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- <app-offices-list [offices]="filtered"></app-offices-list> -->
