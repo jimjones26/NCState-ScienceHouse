@@ -183,6 +183,15 @@ export const dbData = {
                   'fax': '8283893243'
                 },
                 {
+                  'name': 'Hayesville Middle School',
+                  'street': '135 School Drive',
+                  'city': 'Hayesville',
+                  'state': 'North Carolina',
+                  'zip': '28904',
+                  'phone': '8283899924',
+                  'fax': '8283891706'
+                },
+                {
                   'name': 'Hayesville High School',
                   'street': '205 Yellow Jacket Drive',
                   'city': 'Hayesville',
