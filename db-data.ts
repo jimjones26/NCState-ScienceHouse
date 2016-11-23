@@ -26,7 +26,7 @@ export const dbData = {
           'name': 'Cherokee',
           'districts': [
             {
-              'name': 'Cherokee County Schools',
+              'name': 'Cherokee County School District',
               'schools': [
                 {
                   'name': 'Andrews Elementary School',
@@ -38,6 +38,15 @@ export const dbData = {
                   'fax': '8283210401'
                 },
                 {
+                  'name': 'Andrews Middle School',
+                  'street': '2750 Business 19',
+                  'city': 'Andrews',
+                  'state': 'North Carolina',
+                  'zip': '28901',
+                  'phone': '8283215762',
+                  'fax': '8283212009'
+                },
+                {
                   'name': 'Andrews High School',
                   'street': '50 High School Dr',
                   'city': 'Andrews',
@@ -45,6 +54,114 @@ export const dbData = {
                   'zip': '28901',
                   'phone': '8283215415',
                   'fax': '8283213986'
+                },
+                {
+                  'name': 'Hiwassee Dam Elementary / Middle School',
+                  'street': '337 Blue Eagle Circle',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8286445115',
+                  'fax': '8286449463'
+                },
+                {
+                  'name': 'Hiwassee Dam High School',
+                  'street': '267 Blue Eagle Circle',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8286445115',
+                  'fax': '8286449463'
+                },
+                {
+                  'name': 'Marble Elementary School',
+                  'street': '2230 Airport Rd',
+                  'city': 'Marble',
+                  'state': 'North Carolina',
+                  'zip': '28905',
+                  'phone': '8288375485',
+                  'fax': ''
+                },
+                {
+                  'name': 'Martins Creek School',
+                  'street': '1459 Tobe Stalcup Road Murphy',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288372831',
+                  'fax': '8288370023'
+                },
+                {
+                  'name': 'Mountain Youth High School',
+                  'street': '4533 Martins Creek Road,',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288376775',
+                  'fax': '8288377979'
+                },
+                {
+                  'name': 'Murphy Elementary School',
+                  'street': '315 Valley River Avenue,',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288372424',
+                  'fax': '8288373887'
+                },
+                {
+                  'name': 'Murphy Elementary School',
+                  'street': '315 Valley River Avenue,',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288372424',
+                  'fax': '8288373887'
+                },
+                {
+                  'name': 'Murphy Middle School',
+                  'street': '65 Middle School Dr,',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288370160',
+                  'fax': '8288375814'
+                },
+                {
+                  'name': 'Murphy High School',
+                  'street': '234 High School Circle,',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288372426',
+                  'fax': '8288373555'
+                },
+                {
+                  'name': 'Peachtree Elementary School',
+                  'street': '30 Upper Peachtree Road',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288372479',
+                  'fax': '8288376494'
+                },
+                {
+                  'name': 'Ranger Elementary / Middle School',
+                  'street': '101 Hardy Truett Road',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8286445111',
+                  'fax': '8286449828'
+                },
+                {
+                  'name': 'TriCounty Early College',
+                  'street': '21 Campus Circle',
+                  'city': 'Murphy',
+                  'state': 'North Carolina',
+                  'zip': '28906',
+                  'phone': '8288354298',
+                  'fax': ''
                 }
               ]
             }
