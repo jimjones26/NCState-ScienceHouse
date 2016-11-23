@@ -77,6 +77,272 @@ export const dbData = {
               ]
             }
           ]
+        },
+        {
+          'name': 'Graham',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Swain',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Macon',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Jackson',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Haywood',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Transylvania',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Henderson',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Buncombe',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Madison',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Yancey',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Mitchell',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'McDowell',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Rutherford',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          'name': 'Polk',
+          'districts': [
+            {
+              'name': 'TestDistrict',
+              'schools': [
+                {
+                  'name': 'TestSchoolName',
+                  'street': 'TestSchoolStreet',
+                  'city': 'TestSchoolCity',
+                  'state': 'TestSchoolState',
+                  'zip': 'TestSchoolZip',
+                  'phone': 'TestSchoolPhone',
+                  'fax': 'TestSchoolFax'
+                }
+              ]
+            }
+          ]
         }
       ]
     },
