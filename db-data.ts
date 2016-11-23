@@ -208,16 +208,34 @@ export const dbData = {
           'name': 'Graham',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Graham County Schools',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Robbinsville Elementary School',
+                  'street': '54 Moose Branch Rd',
+                  'city': 'Robbinsville',
+                  'state': 'North Carolina',
+                  'zip': '28771',
+                  'phone': '8284799850',
+                  'fax': '8284799845'
+                },
+                {
+                  'name': 'Robbinsville Middle School',
+                  'street': '301 Sweetwater Rd',
+                  'city': 'Robbinsville',
+                  'state': 'North Carolina',
+                  'zip': '28771',
+                  'phone': '(828) 479-9840',
+                  'fax': '(828) 479-9847'
+                },
+                {
+                  'name': 'Robbinsville High School',
+                  'street': '301 Sweetwater Road',
+                  'city': 'Robbinsville',
+                  'state': 'North Carolina',
+                  'zip': '28771',
+                  'phone': '8284799830',
+                  'fax': '828479-9859'
                 }
               ]
             }
@@ -227,16 +245,52 @@ export const dbData = {
           'name': 'Swain',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Swain County Public Schools',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Swain West Elementary School',
+                  'street': '4142 Highway 19 West',
+                  'city': 'Bryson City',
+                  'state': 'North Carolina',
+                  'zip': '28713',
+                  'phone': '8284882119',
+                  'fax': '8284880797'
+                },
+                {
+                  'name': 'Swain East Elementary School',
+                  'street': '4747 Ela Road',
+                  'city': 'Bryson City',
+                  'state': 'North Carolina',
+                  'zip': '28713',
+                  'phone': '8284880939',
+                  'fax': '8284886635'
+                },
+                {
+                  'name': 'Swain County Middle School',
+                  'street': '135 Arlington Avenue',
+                  'city': 'Bryson City',
+                  'state': 'North Carolina',
+                  'zip': '28713',
+                  'phone': '8284883480',
+                  'fax': '8284880949'
+                },
+                {
+                  'name': 'Swain County High School',
+                  'street': '1415 Fontana Road',
+                  'city': 'Bryson City',
+                  'state': 'North Carolina',
+                  'zip': '28713',
+                  'phone': '8284882152',
+                  'fax': '8284880523'
+                },
+                {
+                  'name': 'Bright Adventures Pre K',
+                  'street': '249 School Drive',
+                  'city': 'Bryson City',
+                  'state': 'North Carolina',
+                  'zip': '28713',
+                  'phone': '8284881494',
+                  'fax': '8284881345'
                 }
               ]
             }
