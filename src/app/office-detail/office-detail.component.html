@@ -1,3 +1,25 @@
-<p>
-  office-detail works!
-</p>
+<h2>{{ (office$ | async)?.name }}</h2>
+<h5>Office Address</h5>
+<h5>Office Phone and Zip</h5>
+
+<h3>List of Counties in Office</h3>
+
+<div>
+  <button>Previous Page</button>
+  <button>Next Page</button>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let county of (counties$ | async)">
+        <td>{{ county.name }}</td>
+        <td>{{ county.$key }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <button>New County</button>
+</div>

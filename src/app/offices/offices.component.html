@@ -7,7 +7,8 @@
   <table class="table table-striped">
     <tbody>
       <tr *ngFor="let office of (offices$ | async)">
-        <td><a [routerLink]="office.name | slugPipe">{{office.name}}</a></td>
+        <!--office.name | slugPipe-->
+        <td><a [routerLink]="office.name">{{office.name}}</a></td>
         <td>{{office.url}}</td>
       </tr>
     </tbody>
