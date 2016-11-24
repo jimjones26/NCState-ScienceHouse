@@ -2,7 +2,8 @@
   <table class="table table-striped">
     <tbody>
       <tr *ngFor="let office of offices">
-        <td>{{office.name}}</td>
+        <!--office.name | slugPipe-->
+        <td><a [routerLink]="office.name">{{office.name}}</a></td>
         <td>{{office.url}}</td>
       </tr>
     </tbody>
