@@ -48,7 +48,7 @@ export const dbData = {
                 },
                 {
                   'name': 'Andrews High School',
-                  'street': '50 High School Dr',
+                  'street': '50 High School Drive',
                   'city': 'Andrews',
                   'state': 'North Carolina',
                   'zip': '28901',
@@ -120,7 +120,7 @@ export const dbData = {
                 },
                 {
                   'name': 'Murphy Middle School',
-                  'street': '65 Middle School Dr,',
+                  'street': '65 Middle School Drive,',
                   'city': 'Murphy',
                   'state': 'North Carolina',
                   'zip': '28906',
@@ -501,16 +501,142 @@ export const dbData = {
           'name': 'Haywood',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Haywood County Schools ',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Bethel Elementary School',
+                  'street': '4700 Old River Road',
+                  'city': 'Canton',
+                  'state': 'North Carolina',
+                  'zip': '28716',
+                  'phone': '8286463448',
+                  'fax': ''
+                },
+                {
+                  'name': 'Clyde Elementary School',
+                  'street': '4182 Old Clyde Road',
+                  'city': 'Clyde',
+                  'state': 'North Carolina',
+                  'zip': '28721',
+                  'phone': '8286272206',
+                  'fax': ''
+                },
+                {
+                  'name': 'Hazelwood Elementary School',
+                  'street': '1111 Plott Creek Road',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28786',
+                  'phone': '8284562406',
+                  'fax': ''
+                },
+                {
+                  'name': 'Jonathan Valley Elementary School',
+                  'street': '410 Hall Drive',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28785',
+                  'phone': '8289263207',
+                  'fax': ''
+                },
+                {
+                  'name': 'Junaluska Elementary School',
+                  'street': '2238 Asheville Road',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28786',
+                  'phone': '8284562407',
+                  'fax': ''
+                },
+                {
+                  'name': 'Meadowbrook Elementary School',
+                  'street': '85 Morningstar Road',
+                  'city': 'Canton',
+                  'state': 'North Carolina',
+                  'zip': '28716',
+                  'phone': '8286463445',
+                  'fax': ''
+                },
+                {
+                  'name': 'North Canton Elementary School',
+                  'street': '60 Thompson Street',
+                  'city': 'Canton',
+                  'state': 'North Carolina',
+                  'zip': '28716',
+                  'phone': '8286463444',
+                  'fax': ''
+                },
+                {
+                  'name': 'Riverbend Elementary School',
+                  'street': '71 Learning Lane',
+                  'city': 'Clyde',
+                  'state': 'North Carolina',
+                  'zip': '28721',
+                  'phone': '8286276565',
+                  'fax': ''
+                },
+                {
+                  'name': 'Bethel Middle School',
+                  'street': '630 Sonoma Road',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28786',
+                  'phone': '8286463442',
+                  'fax': ''
+                },
+                {
+                  'name': 'Canton Middle School',
+                  'street': '60 Penland Street',
+                  'city': 'Canton',
+                  'state': 'North Carolina',
+                  'zip': '28716',
+                  'phone': '8286463467',
+                  'fax': ''
+                },
+                {
+                  'name': 'Waynesville Middle School',
+                  'street': '495 Brown Avenue',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28786',
+                  'phone': '8284562403',
+                  'fax': ''
+                },
+                {
+                  'name': 'Central Haywood High School',
+                  'street': '3215 Broad Street',
+                  'city': 'Clyde',
+                  'state': 'North Carolina',
+                  'zip': '28721',
+                  'phone': '8286279944',
+                  'fax': ''
+                },
+                {
+                  'name': 'Haywood Early College',
+                  'street': '185 Freedlander Drive',
+                  'city': 'Clyde',
+                  'state': 'North Carolina',
+                  'zip': '28721',
+                  'phone': '8285654000',
+                  'fax': ''
+                },
+                {
+                  'name': 'Pisgah High School',
+                  'street': '1 Black Bear Drive',
+                  'city': 'Canton',
+                  'state': 'North Carolina',
+                  'zip': '28716',
+                  'phone': '8286463440',
+                  'fax': ''
+                },
+                {
+                  'name': 'Tuscola High School',
+                  'street': '564 Tuscola School Road',
+                  'city': 'Waynesville',
+                  'state': 'North Carolina',
+                  'zip': '28786',
+                  'phone': '8284562408',
+                  'fax': ''
                 }
               ]
             }
