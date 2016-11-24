@@ -646,16 +646,88 @@ export const dbData = {
           'name': 'Transylvania',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Transylvania County Schools',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Brevard Elementary School',
+                  'street': '399 Greenville Highway',
+                  'city': 'Brevard',
+                  'state': 'North Carolina',
+                  'zip': '28712',
+                  'phone': '8288842001',
+                  'fax': '8288843304'
+                },
+                {
+                  'name': 'Pisgah Forest Elementary School',
+                  'street': '1076 Ecusta Road',
+                  'city': 'Brevard',
+                  'state': 'North Carolina',
+                  'zip': '28712',
+                  'phone': '8288774481',
+                  'fax': '8288842551'
+                },
+                {
+                  'name': 'Rosman Elementary School',
+                  'street': '167 Rosman School Road',
+                  'city': 'Rosman',
+                  'state': 'North Carolina',
+                  'zip': '28772',
+                  'phone': '8288624431',
+                  'fax': '8288624281'
+                },
+                {
+                  'name': 'T.C. Henderson Elementary School',
+                  'street': '11839 Rosman Highway',
+                  'city': 'Lake Toxaway',
+                  'state': 'North Carolina',
+                  'zip': '28747',
+                  'phone': '8288624463',
+                  'fax': '8288624621'
+                },
+                {
+                  'name': 'Brevard Middle School',
+                  'street': '400 Fisher Road',
+                  'city': 'Brevard',
+                  'state': 'North Carolina',
+                  'zip': '28712',
+                  'phone': '8288842091',
+                  'fax': '8288833150'
+                },
+                {
+                  'name': 'Rosman Middle School',
+                  'street': '2770 Old Rosman Highway',
+                  'city': 'Rosman',
+                  'state': 'North Carolina',
+                  'zip': '28772',
+                  'phone': '8288624286',
+                  'fax': '8288855573'
+                },
+                {
+                  'name': 'Davidson River School',
+                  'street': '970 Ecusta Road',
+                  'city': 'Brevard',
+                  'state': 'North Carolina',
+                  'zip': '28712',
+                  'phone': '8288849567',
+                  'fax': '8288625347'
+                },
+                {
+                  'name': 'Brevard High School',
+                  'street': '609 North Country Club Road',
+                  'city': 'Brevard',
+                  'state': 'North Carolina',
+                  'zip': '28712',
+                  'phone': '8288844103',
+                  'fax': '8288857355'
+                },
+                {
+                  'name': 'Rosman High School',
+                  'street': '749 Pickens Highway',
+                  'city': 'Rosman',
+                  'state': 'North Carolina',
+                  'zip': '28772',
+                  'phone': '8288624284',
+                  'fax': '8288855572'
                 }
               ]
             }
