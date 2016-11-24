@@ -409,16 +409,89 @@ export const dbData = {
           'name': 'Jackson',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Jackson County Public Schools',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Blue Ridge School',
+                  'street': '95 Bobcat Drive',
+                  'city': 'Cashiers',
+                  'state': 'North Carolina',
+                  'zip': '28717',
+                  'phone': '8285862311',
+                  'fax': '8287435320'
+                },
+                {
+                  'name': 'Blue Ridge Early College',
+                  'street': '95 Bobcat Drive',
+                  'city': 'Cashiers',
+                  'state': 'North Carolina',
+                  'zip': '28717',
+                  'phone': '8287432646',
+                  'fax': '8287435320'
+                },
+                {
+                  'name': 'Cullowhee Valley School',
+                  'street': '240 Wisdom Drive',
+                  'city': 'Cullowhee',
+                  'state': 'North Carolina',
+                  'zip': '28723',
+                  'phone': '8282935667',
+                  'fax': '8282935845'
+                },
+                ,
+                {
+                  'name': 'Fairview School',
+                  'street': '251 Big Orange Way',
+                  'city': 'Sylva',
+                  'state': 'North Carolina',
+                  'zip': '28779',
+                  'phone': '8285862819',
+                  'fax': '8285863462'
+                },
+                {
+                  'name': 'Jackson County Early College',
+                  'street': '404 College Drive',
+                  'city': 'Sylva',
+                  'state': 'North Carolina',
+                  'zip': '28779',
+                  'phone': '8283394499',
+                  'fax': '8285866432'
+                },
+                {
+                  'name': 'School of Alternatives',
+                  'street': '3770 Skyland Drive',
+                  'city': 'Sylva',
+                  'state': 'North Carolina',
+                  'zip': '28779',
+                  'phone': '8285864328',
+                  'fax': '8285862490'
+                },
+                {
+                  'name': 'Scotts Creek School',
+                  'street': '516 Parris Branch Road',
+                  'city': 'Sylva',
+                  'state': 'North Carolina',
+                  'zip': '28779',
+                  'phone': '8286312740',
+                  'fax': '8286310758'
+                },
+                {
+                  'name': 'Smokey Mountain Elementary School',
+                  'street': '884 US Highway 441 North',
+                  'city': 'Whittier',
+                  'state': 'North Carolina',
+                  'zip': '28789',
+                  'phone': '8284975535',
+                  'fax': '8284974907'
+                },
+                {
+                  'name': 'Smokey Mountain High School',
+                  'street': '100 Smoky Mountain Drive',
+                  'city': 'Sylva',
+                  'state': 'North Carolina',
+                  'zip': '28779',
+                  'phone': '8285862177',
+                  'fax': '8285862374'
                 }
               ]
             }
