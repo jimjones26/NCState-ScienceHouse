@@ -300,16 +300,106 @@ export const dbData = {
           'name': 'Macon',
           'districts': [
             {
-              'name': 'TestDistrict',
+              'name': 'Macon County Schools',
               'schools': [
                 {
-                  'name': 'TestSchoolName',
-                  'street': 'TestSchoolStreet',
-                  'city': 'TestSchoolCity',
-                  'state': 'TestSchoolState',
-                  'zip': 'TestSchoolZip',
-                  'phone': 'TestSchoolPhone',
-                  'fax': 'TestSchoolFax'
+                  'name': 'Cartoogechaye Elementary School',
+                  'street': '3295 Old Murphy Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8285242845',
+                  'fax': '8283693263'
+                },
+                {
+                  'name': 'East Franklin Elementary School',
+                  'street': '100 Watauga Street',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8285243216',
+                  'fax': ''
+                },
+                {
+                  'name': 'Iota Valley Elementary School',
+                  'street': '1166 Iotla Church Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8285242938',
+                  'fax': '8283698403'
+                },
+                {
+                  'name': 'South Macon Elementary School',
+                  'street': '855 Addington Bridge Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8283690796',
+                  'fax': '8283690947'
+                },
+                {
+                  'name': 'Mountain View Intermediate School',
+                  'street': '161 Clarks Chapel Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8283491325',
+                  'fax': ''
+                },
+                {
+                  'name': 'Macon Middle School',
+                  'street': '1345 Wells Grove Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8285243766',
+                  'fax': '8283493900'
+                },
+                {
+                  'name': 'Franklin High School',
+                  'street': '100 Panther Drive',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8285246467',
+                  'fax': '8285240684'
+                },
+                {
+                  'name': 'Macon Early College',
+                  'street': '77 Siler Farm Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8283697331',
+                  'fax': '8283490333'
+                },
+                {
+                  'name': 'Union Academy',
+                  'street': '158 Union School Road',
+                  'city': 'Franklin',
+                  'state': 'North Carolina',
+                  'zip': '28734',
+                  'phone': '8283691277',
+                  'fax': '8285242859'
+                },
+                {
+                  'name': 'Highlands School',
+                  'street': '545 Pierson Drive',
+                  'city': 'Highlands',
+                  'state': 'North Carolina',
+                  'zip': '28741',
+                  'phone': '8285262147',
+                  'fax': '8285260615'
+                },
+                {
+                  'name': 'Nantahala School',
+                  'street': '213 Winding Stairs Road',
+                  'city': 'Topton',
+                  'state': 'North Carolina',
+                  'zip': '28781',
+                  'phone': '8283214388',
+                  'fax': '8283214834'
                 }
               ]
             }
