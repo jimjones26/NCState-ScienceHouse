@@ -11,17 +11,4 @@
   <button>Next Page</button>
 </div>
 
-<div class="table-responsive">
-  <table class="table table-striped">
-    <tbody>
-      <tr *ngFor="let county of (counties$ | async)">
-        <td>{{ county.name }}</td>
-        <td>{{ county.$key }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<div>
-  <button>New County</button>
-</div>
+<app-counties-list [counties]="(counties$ | async)"></app-counties-list>
