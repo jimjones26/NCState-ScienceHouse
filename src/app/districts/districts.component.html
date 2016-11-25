@@ -1,15 +1,4 @@
 <h2>All Districts</h2>
-<h4> Total # of Districts: {{allDistricts?.length}}</h4>
-
-<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
-
-<div class="table-responsive">
-  <table class="table table-striped">
-    <tbody>
-      <tr *ngFor="let district of filtered">
-        <td>{{district.name}}</td>
-        <td>{{district.countyId}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<h4> Total # of Districts: {{(districts$ | async)?.length}}</h4>
+<hr>
+<app-districts-list [districts]="(districts$ | async)"></app-districts-list>

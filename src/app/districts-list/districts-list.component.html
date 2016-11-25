@@ -1,3 +1,10 @@
-<p>
-  districts-list works!
-</p>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let district of districts">
+        <td>{{district.name}}</td>
+        <td>{{district.countyId}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
