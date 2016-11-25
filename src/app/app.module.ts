@@ -24,7 +24,7 @@ import { OfficesComponent } from './offices/offices.component';
 import { OfficesListComponent } from './offices-list/offices-list.component';
 import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { CountiesComponent } from './counties/counties.component';
-import { CountyListComponent } from './county-list/county-list.component';
+import { CountiesListComponent } from './counties-list/counties-list.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
 
@@ -39,7 +39,7 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     TopMenuComponent,
     OfficesComponent,
     CountiesComponent,
-    CountyListComponent,
+    CountiesListComponent,
     DistrictsComponent,
     SchoolsComponent,
     OfficeDetailComponent,
