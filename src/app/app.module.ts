@@ -30,6 +30,7 @@ import { SchoolsComponent } from './schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 import { DistrictsListComponent } from './districts-list/districts-list.component';
+import { DistrictDetailComponent } from './district-detail/district-detail.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { DistrictsListComponent } from './districts-list/districts-list.componen
     SchoolsComponent,
     OfficeDetailComponent,
     SlugPipePipe,
-    DistrictsListComponent
+    DistrictsListComponent,
+    DistrictDetailComponent
   ],
   imports: [
     BrowserModule,
