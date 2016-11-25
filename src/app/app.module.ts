@@ -29,6 +29,7 @@ import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
+import { DistrictsListComponent } from './districts-list/districts-list.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     DistrictsComponent,
     SchoolsComponent,
     OfficeDetailComponent,
-    SlugPipePipe
+    SlugPipePipe,
+    DistrictsListComponent
   ],
   imports: [
     BrowserModule,
