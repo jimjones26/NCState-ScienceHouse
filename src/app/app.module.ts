@@ -19,14 +19,17 @@ import { SchoolsService } from './shared/model/schools.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { OfficesListComponent } from './offices-list/offices-list.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { OfficesComponent } from './offices/offices.component';
+import { OfficesListComponent } from './offices-list/offices-list.component';
+import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { CountiesComponent } from './counties/counties.component';
+import { CountyListComponent } from './county-list/county-list.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
-import { OfficeDetailComponent } from './office-detail/office-detail.component';
+
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     TopMenuComponent,
     OfficesComponent,
     CountiesComponent,
+    CountyListComponent,
     DistrictsComponent,
     SchoolsComponent,
     OfficeDetailComponent,
