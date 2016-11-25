@@ -26,28 +26,27 @@ import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { CountiesComponent } from './counties/counties.component';
 import { CountiesListComponent } from './counties-list/counties-list.component';
 import { DistrictsComponent } from './districts/districts.component';
+import { DistrictsListComponent } from './districts-list/districts-list.component';
+import { DistrictDetailComponent } from './district-detail/district-detail.component';
 import { SchoolsComponent } from './schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
-import { DistrictsListComponent } from './districts-list/districts-list.component';
-import { DistrictDetailComponent } from './district-detail/district-detail.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    OfficesListComponent,
     TopMenuComponent,
     OfficesComponent,
+    OfficesListComponent,
+    OfficeDetailComponent,
     CountiesComponent,
     CountiesListComponent,
     DistrictsComponent,
-    SchoolsComponent,
-    OfficeDetailComponent,
-    SlugPipePipe,
     DistrictsListComponent,
-    DistrictDetailComponent
+    DistrictDetailComponent,
+    SchoolsComponent,
+    SlugPipePipe
   ],
   imports: [
     BrowserModule,
