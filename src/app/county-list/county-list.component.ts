@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { County } from '../shared/model/county';
 
 @Component({
   selector: 'app-county-list',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./county-list.component.css']
 })
 export class CountyListComponent implements OnInit {
+
+  @Input()
+  counties: County[];
 
   constructor() { }
 

@@ -1,3 +1,10 @@
-<p>
-  county-list works!
-</p>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let county of counties">
+        <td>{{county.name}}</td>
+        <td>{{county.officeId}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -3,13 +3,4 @@
 
 <input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
 
-<div class="table-responsive">
-  <table class="table table-striped">
-    <tbody>
-      <tr *ngFor="let county of filtered">
-        <td>{{county.name}}</td>
-        <td>{{county.officeId}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<app-county-list [counties]="filtered"></app-county-list>
