@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { routerConfig } from './router.config';
 
 import { firebaseConfig } from '../../src/environments/firebase.config';
-import { AngularFireModule } from 'angularFire2/index';
+import { AngularFireModule } from 'angularfire2/index';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';

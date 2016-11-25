@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Office } from './office';
 import { County } from '../../shared/model/county';
-import { AngularFire } from 'angularFire2/index';
+import { AngularFire } from 'angularfire2/index';
 
 @Injectable()
 export class OfficesService {
