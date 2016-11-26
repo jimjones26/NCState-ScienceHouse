@@ -5,6 +5,8 @@ import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { CountiesComponent } from './counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routerConfig: Route[] = [
   {
@@ -29,6 +31,12 @@ export const routerConfig: Route[] = [
   },
   {
     path: 'schools', component: SchoolsComponent
+  },
+  {
+    path: 'login', component: LoginComponent
+  },
+  {
+    path: 'register', component: RegisterComponent
   },
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
