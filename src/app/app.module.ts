@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2/index';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 
+import { AuthService } from './shared/security/auth.service';
 import { OfficesService } from './shared/model/offices.service';
 import { CountiesService } from './shared/model/counties.service';
 import { DistrictsService } from './shared/model/districts.service';
@@ -61,6 +62,7 @@ import { RegisterComponent } from './register/register.component';
     NgbModule.forRoot()
   ],
   providers: [
+    AuthService,
     OfficesService,
     CountiesService,
     DistrictsService,
