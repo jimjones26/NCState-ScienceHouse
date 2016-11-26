@@ -31,6 +31,8 @@ import { DistrictDetailComponent } from './district-detail/district-detail.compo
 import { SchoolsComponent } from './schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     DistrictsListComponent,
     DistrictDetailComponent,
     SchoolsComponent,
-    SlugPipePipe
+    SlugPipePipe,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
