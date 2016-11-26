@@ -13,6 +13,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 
 import { AuthService } from './shared/security/auth.service';
+import { AuthGuard } from './shared/security/auth.guard';
 import { OfficesService } from './shared/model/offices.service';
 import { CountiesService } from './shared/model/counties.service';
 import { DistrictsService } from './shared/model/districts.service';
@@ -64,6 +65,7 @@ import { RegisterComponent } from './register/register.component';
   ],
   providers: [
     AuthService,
+    AuthGuard,
     OfficesService,
     CountiesService,
     DistrictsService,

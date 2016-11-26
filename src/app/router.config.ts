@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { AuthGuard } from './shared/security/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { OfficesComponent } from './offices/offices.component';
 import { OfficeDetailComponent } from './office-detail/office-detail.component';
@@ -16,21 +17,26 @@ export const routerConfig: Route[] = [
     path: 'offices',
     children: [
       {
-        path: ':id', component: OfficeDetailComponent
+        path: ':id', component: OfficeDetailComponent,
+        canActivate: [AuthGuard]
       },
       {
-        path: '', component: OfficesComponent
+        path: '', component: OfficesComponent,
+        canActivate: [AuthGuard]
       }
     ]
   },
   {
-    path: 'counties', component: CountiesComponent
+    path: 'counties', component: CountiesComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: 'districts', component: DistrictsComponent
+    path: 'districts', component: DistrictsComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: 'schools', component: SchoolsComponent
+    path: 'schools', component: SchoolsComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'login', component: LoginComponent
