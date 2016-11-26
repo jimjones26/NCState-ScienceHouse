@@ -4,10 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-import { routerConfig } from './router.config';
-
-import { firebaseConfig } from '../../src/environments/firebase.config';
 import { AngularFireModule } from 'angularfire2/index';
+
+import { routerConfig } from './router.config';
+import { authConfig, firebaseConfig } from '../../src/environments/firebase.config';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -58,7 +58,7 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig, authConfig),
     RouterModule.forRoot(routerConfig),
     NgbModule.forRoot()
   ],
