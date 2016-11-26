@@ -16,6 +16,10 @@ export class AuthService {
     return this.fromFirebaseAuthPromise(this.auth.login({ email, password }));
   }
 
+  signUp(email, password) {
+    return this.fromFirebaseAuthPromise(this.auth.createUser({ email, password }));
+  }
+
   fromFirebaseAuthPromise(promise): Observable<any> {
     const subject = new Subject<any>();
 
