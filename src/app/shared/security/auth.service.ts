@@ -38,4 +38,9 @@ export class AuthService {
     return subject;
   }
 
+  logout() {
+    this.auth.logout();
+    this.authInfo$.next(AuthService.UNKNOWN_USER);
+  }
+
 }
