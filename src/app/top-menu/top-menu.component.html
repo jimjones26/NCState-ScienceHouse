@@ -1,6 +1,6 @@
-<nav class="navbar navbar-static-top navbar-dark bg-primary">
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
   <a class="navbar-brand" routerLink="home">TSH</a>
-  <ul class="nav navbar-nav">
+  <ul class="nav navbar-nav" *ngIf="authInfo?.isLoggedIn()">
     <li class="nav-item">
       <a class="nav-link" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
     </li>
@@ -16,6 +16,8 @@
     <li class="nav-item">
       <a class="nav-link" routerLink="schools" routerLinkActive="active">Schools</a>
     </li>
+  </ul>
+  <ul class="nav navbar-nav float-xs-right">
     <li class="nav-item" *ngIf="!authInfo?.isLoggedIn()">
       <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>
     </li>
@@ -23,7 +25,7 @@
       <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>
     </li>
     <li class="nav-item" *ngIf="authInfo?.isLoggedIn()">
-      <a class="nav-link" (click)="logout()">Logout</a>
+      <a class="nav-link" (click)="logout()" routerLink="">Logout</a>
     </li>
   </ul>
 </nav>
