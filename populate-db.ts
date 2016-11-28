@@ -8,6 +8,7 @@ const officesReference = database().ref('offices');
 const countiesReference = database().ref('counties');
 const districtsReference = database().ref('districts');
 const schoolsReference = database().ref('schools');
+const rolesReference = database().ref('roles');
 
 dbData.offices.forEach(office => {
   // push offices
@@ -108,4 +109,13 @@ dbData.offices.forEach(office => {
       });
     });
   });
+});
+
+dbData.roles.forEach(role => {
+  // push roles
+  console.log('Adding Role ', role.name);
+  rolesReference.push({
+    name: role.name
+  });
+
 });
