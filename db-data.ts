@@ -9,18 +9,6 @@ export const dbData = {
       'zip': '28778',
       'phone': '1234567890',
       'fax': '1234567890',
-      'employees': [
-        {
-          'name': 'Theresa Cowen',
-          'email': 'test@test.com',
-          'phone': '1234567891'
-        },
-        {
-          'name': 'Michelle Benigno',
-          'email': 'testing@testing.com',
-          'phone': '2345678901'
-        }
-      ],
       'counties': [
         {
           'name': 'Cherokee',
@@ -896,9 +884,6 @@ export const dbData = {
       'zip': '28645',
       'phone': '8283286183',
       'fax': '',
-      'employees': [
-        {}
-      ],
       'counties': [
         {
           'name': 'Caldwell',
@@ -967,9 +952,6 @@ export const dbData = {
       'zip': '28557',
       'phone': '2522226376',
       'fax': '',
-      'employees': [
-        {}
-      ],
       'counties': [
         {
           'name': 'Carteret',
@@ -1028,6 +1010,26 @@ export const dbData = {
           ]
         }
       ]
+    }
+  ],
+  'roles': [
+    {
+      name: 'Super Administrator'
+    },
+    {
+      name: 'Administrator'
+    },
+    {
+      name: 'Manager'
+    },
+    {
+      name: 'Employee'
+    },
+    {
+      name: 'Customer'
+    },
+    {
+      name: 'New User'
     }
   ]
 };
