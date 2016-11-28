@@ -25,6 +25,7 @@ dbData.offices.forEach(office => {
   }).then((officeSnapshot) => {
 
     office.counties.forEach(county => {
+
       // push counties
       console.log('-- Adding county ' + county.name + ' to ' + office.name);
 
@@ -49,6 +50,7 @@ dbData.offices.forEach(office => {
         // end create association node
 
         county.districts.forEach(district => {
+
           // push districts
           console.log('---- Adding district ' + district.name + ' to ' + county.name);
 
@@ -87,21 +89,25 @@ dbData.offices.forEach(office => {
                 districtId: districtSnapshot.key
               }).then((schoolSnapshot) => {
 
-                // create association node
+                // create district association node
                 let schoolKeysPerDistrict = [];
 
                 schoolKeysPerDistrict.push(schoolSnapshot.key);
 
                 const association3 = database().ref('schoolsPerDistrict');
                 const schoolsPerDistrict = association3.child(districtSnapshot.key);
+                const association4 = database().ref('schoolsPerOffice');
+                const schoolsPerOffice = association4.child(officeSnapshot.key);
 
                 schoolKeysPerDistrict.forEach(schoolKey => {
-                  console.log('---------- adding school to district');
                   const schoolDistrictAssociation = schoolsPerDistrict.child(schoolKey);
                   schoolDistrictAssociation.set(true);
-                });
-                // end create association node
 
+                  console.log('--------------- adding', school.name + ' to ' + office.name);
+                  const schoolOfficeAssociation = schoolsPerOffice.child(schoolKey);
+                  schoolOfficeAssociation.set(true);
+                });
+                // end district create association node
               });
             });
           });
