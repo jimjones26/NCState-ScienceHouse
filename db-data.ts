@@ -1031,5 +1031,34 @@ export const dbData = {
     {
       name: 'New User'
     }
+  ],
+  'users': [
+    {
+      uid: '1234536dhdgst879746879-',
+      name: 'Jimmy Jones',
+      phone: '1234567890',
+      email: 'jimjones26@gmail.com',
+      school: '078uu254sgtkljnq5l',
+      roles: [
+        {
+          role: 'Super Administrator'
+        },
+        {
+          role: 'Administrator'
+        },
+        {
+          role: 'Manager'
+        },
+        {
+          role: 'Employee'
+        },
+        {
+          role: 'Customer',
+        },
+        {
+          role: 'New User'
+        }
+      ]
+    }
   ]
 };
