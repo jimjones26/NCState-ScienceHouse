@@ -1,17 +1,21 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { Observable, Subject, BehaviorSubject } from 'rxjs/Rx';
-import { FirebaseAuth, FirebaseAuthState } from 'angularfire2/index';
+import { FirebaseAuth, FirebaseAuthState, AngularFireDatabase, FirebaseRef } from 'angularfire2/index';
 import { AuthInfo } from './auth-info';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
 
     static UNKNOWN_USER = new AuthInfo(null);
+    sdkDb: any;
 
     authInfo$: BehaviorSubject<AuthInfo> = new BehaviorSubject<AuthInfo>(AuthService.UNKNOWN_USER);
 
-    constructor(private auth: FirebaseAuth, private router: Router) {
+    constructor(private db: AngularFireDatabase, @Inject(FirebaseRef) fb, private auth: FirebaseAuth, private router: Router) {
+
+        this.sdkDb = fb.database().ref();
+
         this.auth.subscribe(user => {
             if (user) {
                 console.log('we have a user!');
@@ -30,7 +34,31 @@ export class AuthService {
     }
 
     signUp(email, password) {
-        return this.fromFirebaseAuthPromise(this.auth.createUser({ email, password }));
+        return this.fromFirebaseAuthPromise(this.auth.createUser({ email, password })
+            .then(response => {
+                if (response.uid) {
+                    console.log('On new user creation', response.uid);
+                    const updates = {};
+                    updates['/users/' + response.uid] = { new_user: true };
+
+                    const subject = new Subject<any>();
+
+                    this.sdkDb.update(updates)
+                        .then(val => {
+                            subject.next(val);
+                            subject.complete();
+                        }, err => {
+                            subject.error(err);
+                            subject.complete();
+                        });
+
+                    return subject.asObservable();
+
+                } else {
+                    console.log('On new user creation, NO USER');
+                }
+            })
+        );
     }
 
     fromFirebaseAuthPromise(promise): Observable<any> {
