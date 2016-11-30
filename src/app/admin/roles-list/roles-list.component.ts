@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Role } from '../../shared/model/role';
 
 @Component({
   selector: 'app-roles-list',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roles-list.component.css']
 })
 export class RolesListComponent implements OnInit {
+
+  @Input()
+  roles: Role[];
 
   constructor() { }
 

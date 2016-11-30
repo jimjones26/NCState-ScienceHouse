@@ -1,3 +1,10 @@
-<p>
-  roles-list works!
-</p>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let role of roles">
+        <td>{{role.name}}</td>
+        <td>{{role.$key}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,3 +1,4 @@
-<p>
-  roles works!
-</p>
+<h2>All Roles</h2>
+<h4> Total # of Roles: {{(roles$ | async)?.length}}</h4>
+<hr>
+<app-roles-list [roles]="(roles$ | async)"></app-roles-list>

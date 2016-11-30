@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RolesService } from '../../shared/model/roles.service';
+import { Role } from '../../shared/model/role';
+import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-roles',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RolesComponent implements OnInit {
 
-  constructor() { }
+  roles$: Observable<Role[]>;
+
+  constructor(private rolesService: RolesService) { }
 
   ngOnInit() {
+    this.roles$ = this.rolesService.findAllRoles();
   }
 
 }
