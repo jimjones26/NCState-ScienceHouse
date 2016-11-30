@@ -8,6 +8,7 @@ import { DistrictsComponent } from './admin/districts/districts.component';
 import { SchoolsComponent } from './admin/schools/schools.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RolesComponent } from './admin/roles/roles.component';
 
 export const routerConfig: Route[] = [
   {
@@ -36,6 +37,10 @@ export const routerConfig: Route[] = [
   },
   {
     path: 'schools', component: SchoolsComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'roles', component: RolesComponent,
     canActivate: [AuthGuard]
   },
   {
