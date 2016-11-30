@@ -22,6 +22,8 @@ import { RolesService } from './shared/model/roles.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficesListComponent } from './admin/offices-list/offices-list.component';
@@ -32,13 +34,11 @@ import { DistrictsComponent } from './admin/districts/districts.component';
 import { DistrictsListComponent } from './admin/districts-list/districts-list.component';
 import { DistrictDetailComponent } from './admin/district-detail/district-detail.component';
 import { SchoolsComponent } from './admin/schools/schools.component';
-
-import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { RolesComponent } from './admin/roles/roles.component';
 import { RolesListComponent } from './admin/roles-list/roles-list.component';
 import { RoleDetailComponent } from './admin/role-detail/role-detail.component';
+
+import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 
 @NgModule({
   declarations: [
