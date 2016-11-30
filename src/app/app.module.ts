@@ -28,9 +28,9 @@ import { OfficesListComponent } from './admin/offices-list/offices-list.componen
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
 import { CountiesComponent } from './admin/counties/counties.component';
 import { CountiesListComponent } from './admin/counties-list/counties-list.component';
-import { DistrictsComponent } from './districts/districts.component';
-import { DistrictsListComponent } from './districts-list/districts-list.component';
-import { DistrictDetailComponent } from './district-detail/district-detail.component';
+import { DistrictsComponent } from './admin/districts/districts.component';
+import { DistrictsListComponent } from './admin/districts-list/districts-list.component';
+import { DistrictDetailComponent } from './admin/district-detail/district-detail.component';
 import { SchoolsComponent } from './schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';

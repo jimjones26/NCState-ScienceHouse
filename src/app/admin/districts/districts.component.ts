@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DistrictsService } from '../shared/model/districts.service';
-import { District } from '../shared/model/district';
+import { DistrictsService } from '../../shared/model/districts.service';
+import { District } from '../../shared/model/district';
 import { Observable } from 'rxjs/Rx';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { District } from '../shared/model/district';
+import { District } from '../../shared/model/district';
 
 @Component({
   selector: 'app-districts-list',
