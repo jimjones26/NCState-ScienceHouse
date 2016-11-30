@@ -34,6 +34,8 @@ import { DistrictsComponent } from './admin/districts/districts.component';
 import { DistrictsListComponent } from './admin/districts-list/districts-list.component';
 import { DistrictDetailComponent } from './admin/district-detail/district-detail.component';
 import { SchoolsComponent } from './admin/schools/schools.component';
+import { SchoolsListComponent } from './admin/schools-list/schools-list.component';
+import { SchoolDetailComponent } from './admin/school-detail/school-detail.component';
 import { RolesComponent } from './admin/roles/roles.component';
 import { RolesListComponent } from './admin/roles-list/roles-list.component';
 import { RoleDetailComponent } from './admin/role-detail/role-detail.component';
@@ -44,6 +46,8 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
+    RegisterComponent,
     TopMenuComponent,
     OfficesComponent,
     OfficesListComponent,
@@ -54,12 +58,12 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     DistrictsListComponent,
     DistrictDetailComponent,
     SchoolsComponent,
-    SlugPipePipe,
-    LoginComponent,
-    RegisterComponent,
+    SchoolsListComponent,
+    SchoolDetailComponent,
     RolesComponent,
     RolesListComponent,
-    RoleDetailComponent
+    RoleDetailComponent,
+    SlugPipePipe
   ],
   imports: [
     BrowserModule,
