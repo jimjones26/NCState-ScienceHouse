@@ -31,7 +31,7 @@ import { CountiesListComponent } from './admin/counties-list/counties-list.compo
 import { DistrictsComponent } from './admin/districts/districts.component';
 import { DistrictsListComponent } from './admin/districts-list/districts-list.component';
 import { DistrictDetailComponent } from './admin/district-detail/district-detail.component';
-import { SchoolsComponent } from './schools/schools.component';
+import { SchoolsComponent } from './admin/schools/schools.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 import { LoginComponent } from './login/login.component';

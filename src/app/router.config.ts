@@ -5,7 +5,7 @@ import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
 import { CountiesComponent } from './admin/counties/counties.component';
 import { DistrictsComponent } from './admin/districts/districts.component';
-import { SchoolsComponent } from './schools/schools.component';
+import { SchoolsComponent } from './admin/schools/schools.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
