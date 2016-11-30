@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { County } from '../shared/model/county';
+import { County } from '../../shared/model/county';
 
 @Component({
   selector: 'app-counties-list',

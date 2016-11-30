@@ -3,7 +3,7 @@ import { AuthGuard } from './shared/security/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
-import { CountiesComponent } from './counties/counties.component';
+import { CountiesComponent } from './admin/counties/counties.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { SchoolsComponent } from './schools/schools.component';
 import { LoginComponent } from './login/login.component';

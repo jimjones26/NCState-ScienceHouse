@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CountiesService } from '../shared/model/counties.service';
-import { County } from '../shared/model/county';
+import { CountiesService } from '../../shared/model/counties.service';
+import { County } from '../../shared/model/county';
 
 @Component({
   selector: 'app-counties',
