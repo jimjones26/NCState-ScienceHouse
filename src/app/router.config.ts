@@ -5,6 +5,7 @@ import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
 import { CountiesComponent } from './admin/counties/counties.component';
 import { DistrictsComponent } from './admin/districts/districts.component';
+import { DistrictDetailComponent } from './admin/district-detail/district-detail.component';
 import { SchoolsComponent } from './admin/schools/schools.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -32,8 +33,17 @@ export const routerConfig: Route[] = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'districts', component: DistrictsComponent,
-    canActivate: [AuthGuard]
+    path: 'districts',
+    children: [
+      {
+        path: ':id', component: DistrictDetailComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: '', component: DistrictsComponent,
+        canActivate: [AuthGuard]
+      }
+    ]
   },
   {
     path: 'schools', component: SchoolsComponent,

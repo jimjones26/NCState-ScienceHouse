@@ -1,3 +1,12 @@
-<p>
-  district-detail works!
-</p>
+<h2>{{ (district$ | async)?.name }}</h2>
+<hr>
+
+<h3>List of Schools in District</h3>
+
+<div>
+  <button>Previous Page</button>
+  <button>Next Page</button>
+</div>
+
+TODO: break out schools list from schools component
+<!-- <app-schools-list [schools]="(schools$ | async)"></app-schools-list>-->

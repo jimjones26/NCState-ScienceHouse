@@ -2,7 +2,7 @@
   <table class="table table-striped">
     <tbody>
       <tr *ngFor="let district of districts">
-        <td>{{district.name}}</td>
+        <td><a [routerLink]="district.name">{{district.name}}</a></td>
         <td>{{district.countyId}}</td>
       </tr>
     </tbody>
