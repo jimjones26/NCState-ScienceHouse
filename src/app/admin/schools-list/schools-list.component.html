@@ -1,3 +1,10 @@
-<p>
-  schools-list works!
-</p>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let school of schools">
+        <td>{{school.name}}</td>
+        <td>{{school.districtId}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

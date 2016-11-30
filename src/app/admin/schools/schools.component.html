@@ -1,15 +1,4 @@
 <h2>All Schools</h2>
-<h4> Total # of Schools: {{allSchools?.length}}</h4>
-
-<input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
-
-<div class="table-responsive">
-  <table class="table table-striped">
-    <tbody>
-      <tr *ngFor="let school of filtered">
-        <td>{{school.name}}</td>
-        <td>{{school.districtId}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<h4> Total # of Schools: {{(schools$ | async)?.length}}</h4>
+<hr>
+<app-schools-list [schools]="(schools$ | async)"></app-schools-list>
