@@ -36,6 +36,9 @@ import { SchoolsComponent } from './admin/schools/schools.component';
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RolesComponent } from './admin/roles/roles.component';
+import { RolesListComponent } from './admin/roles-list/roles-list.component';
+import { RoleDetailComponent } from './admin/role-detail/role-detail.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { RegisterComponent } from './register/register.component';
     SchoolsComponent,
     SlugPipePipe,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    RolesComponent,
+    RolesListComponent,
+    RoleDetailComponent
   ],
   imports: [
     BrowserModule,
