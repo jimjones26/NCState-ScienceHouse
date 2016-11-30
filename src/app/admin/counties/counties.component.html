@@ -1,6 +1,5 @@
 <h2>All Counties</h2>
 <h4> Total # of Counties: {{allCounties?.length}}</h4>
-
 <input placeholder="Search" (keyup)="search(searchInput.value)" #searchInput/>
-
+<hr>
 <app-counties-list [counties]="filtered"></app-counties-list>

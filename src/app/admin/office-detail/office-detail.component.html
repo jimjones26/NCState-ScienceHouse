@@ -3,12 +3,5 @@
 <h5>{{ (office$ | async)?.city }}, {{ (office$ | async)?.state }} {{ (office$ | async)?.zip }}</h5>
 <h5>Phone: {{ (office$ | async)?.phone }}</h5>
 <hr>
-
 <h3>List of Counties in Office</h3>
-
-<div>
-  <button>Previous Page</button>
-  <button>Next Page</button>
-</div>
-
 <app-counties-list [counties]="(counties$ | async)"></app-counties-list>

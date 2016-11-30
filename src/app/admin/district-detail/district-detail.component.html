@@ -1,11 +1,4 @@
 <h2>{{ (district$ | async)?.name }}</h2>
 <hr>
-
 <h3>List of Schools in District</h3>
-
-<div>
-  <button>Previous Page</button>
-  <button>Next Page</button>
-</div>
-
 <app-schools-list [schools]="(schools$ | async)"></app-schools-list>
