@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { OfficesService } from '../shared/model/offices.service';
-import { Office } from '../shared/model/office';
+import { OfficesService } from '../../shared/model/offices.service';
+import { Office } from '../../shared/model/office';
 import { Observable } from 'rxjs/Rx';
 
 @Component({

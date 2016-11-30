@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Office } from '../shared/model/office';
+import { Office } from '../../shared/model/office';
 
 @Component({
   selector: 'app-offices-list',

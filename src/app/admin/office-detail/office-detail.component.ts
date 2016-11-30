@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { ActivatedRoute } from '@angular/router';
-import { OfficesService } from '../shared/model/offices.service';
-import { Office } from '../shared/model/office';
-import { County } from '../shared/model/county';
+import { OfficesService } from '../../shared/model/offices.service';
+import { Office } from '../../shared/model/office';
+import { County } from '../../shared/model/county';
 
 @Component({
   selector: 'app-office-detail',
