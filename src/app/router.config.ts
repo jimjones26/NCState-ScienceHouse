@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 import { AuthGuard } from './shared/security/auth.guard';
+import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
 import { CustomerDashboardComponent } from './customer/customer-dashboard/customer-dashboard.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
@@ -21,6 +22,9 @@ export const routerConfig: Route[] = [
   },
   {
     path: 'register', component: RegisterComponent, pathMatch: 'full'
+  },
+  {
+    path: 'complete-profile', component: CompleteProfileComponent, pathMatch: 'full'
   },
   {
     path: 'offices',
@@ -64,6 +68,6 @@ export const routerConfig: Route[] = [
     path: '', redirectTo: 'customer-dashboard', pathMatch: 'full'
   },
   {
-    path: '**', redirectTo: 'customer-dashboard'
+    path: '**', redirectTo: 'customer-dashboard', pathMatch: 'full'
   }
 ];

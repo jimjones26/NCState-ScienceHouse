@@ -38,8 +38,8 @@ export class RegisterComponent implements OnInit {
     this.authService.signUp(val.email, val.password)
       .subscribe(
       () => {
-        alert('User created successfully !');
-        this.router.navigateByUrl('/home');
+        console.log('User created successfully!');
+        this.router.navigateByUrl('/complete-profile');
       },
       err => alert(err)
       );
