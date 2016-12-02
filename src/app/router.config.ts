@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 import { AuthGuard } from './shared/security/auth.guard';
+import { CustomerDashboardComponent } from './customer/customer-dashboard/customer-dashboard.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
 import { CountiesComponent } from './admin/counties/counties.component';
@@ -11,11 +12,16 @@ import { RegisterComponent } from './register/register.component';
 import { RolesComponent } from './admin/roles/roles.component';
 
 export const routerConfig: Route[] = [
-  /*
   {
-    path: 'home', component: HomeComponent
+    path: 'customer-dashboard', component: CustomerDashboardComponent,
+    canActivate: [AuthGuard]
   },
-  */
+  {
+    path: 'login', component: LoginComponent, pathMatch: 'full'
+  },
+  {
+    path: 'register', component: RegisterComponent, pathMatch: 'full'
+  },
   {
     path: 'offices',
     children: [
@@ -55,17 +61,9 @@ export const routerConfig: Route[] = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'login', component: LoginComponent
+    path: '', redirectTo: 'customer-dashboard', pathMatch: 'full'
   },
   {
-    path: 'register', component: RegisterComponent
+    path: '**', redirectTo: 'customer-dashboard'
   }
-  /*,
-  {
-    path: '', redirectTo: 'home', pathMatch: 'full'
-  },
-  {
-    path: '**', redirectTo: 'home'
-  }
-  */
 ];
