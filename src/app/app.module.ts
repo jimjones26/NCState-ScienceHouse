@@ -24,6 +24,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { CustomerDashboardComponent } from './customer/customer-dashboard/customer-dashboard.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficesListComponent } from './admin/offices-list/offices-list.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
@@ -47,6 +48,7 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
     LoginComponent,
     RegisterComponent,
     TopMenuComponent,
+    CustomerDashboardComponent,
     OfficesComponent,
     OfficesListComponent,
     OfficeDetailComponent,
