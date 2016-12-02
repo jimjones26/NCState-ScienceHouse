@@ -1,6 +1,5 @@
 import { Route } from '@angular/router';
 import { AuthGuard } from './shared/security/auth.guard';
-import { HomeComponent } from './home/home.component';
 import { OfficesComponent } from './admin/offices/offices.component';
 import { OfficeDetailComponent } from './admin/office-detail/office-detail.component';
 import { CountiesComponent } from './admin/counties/counties.component';
@@ -12,9 +11,11 @@ import { RegisterComponent } from './register/register.component';
 import { RolesComponent } from './admin/roles/roles.component';
 
 export const routerConfig: Route[] = [
+  /*
   {
     path: 'home', component: HomeComponent
   },
+  */
   {
     path: 'offices',
     children: [
@@ -58,11 +59,13 @@ export const routerConfig: Route[] = [
   },
   {
     path: 'register', component: RegisterComponent
-  },
+  }
+  /*,
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
   },
   {
     path: '**', redirectTo: 'home'
   }
+  */
 ];

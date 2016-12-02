@@ -21,7 +21,6 @@ import { SchoolsService } from './shared/model/schools.service';
 import { RolesService } from './shared/model/roles.service';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
@@ -45,7 +44,6 @@ import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     LoginComponent,
     RegisterComponent,
     TopMenuComponent,
