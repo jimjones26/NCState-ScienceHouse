@@ -82,7 +82,7 @@ export class AuthService {
     logout() {
         this.auth.logout();
         this.authInfo$.next(AuthService.UNKNOWN_USER);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/login']);
     }
 
 }
