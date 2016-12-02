@@ -24,6 +24,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
 import { CustomerProfileComponent } from './customer/customer-profile/customer-profile.component';
 import { CustomerDashboardComponent } from './customer/customer-dashboard/customer-dashboard.component';
 import { OfficesComponent } from './admin/offices/offices.component';
@@ -43,13 +44,13 @@ import { RoleDetailComponent } from './admin/role-detail/role-detail.component';
 
 import { SlugPipePipe } from './shared/pipes/slug-pipe.pipe';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     TopMenuComponent,
+    CompleteProfileComponent,
     CustomerProfileComponent,
     CustomerDashboardComponent,
     OfficesComponent,
