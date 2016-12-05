@@ -12,4 +12,13 @@ export class RolesService {
     return this.af.database.list('roles').map(Role.fromJsonArray);
   }
 
+  findRoleByName(roleName: string): Observable<Role> {
+    return this.af.database.list('roles', {
+      query: {
+        orderByChild: 'name',
+        equalTo: roleName
+      }
+    }).map(results => results[0]);
+  }
+
 }

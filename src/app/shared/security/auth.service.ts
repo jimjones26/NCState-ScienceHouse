@@ -33,7 +33,7 @@ export class AuthService {
         return this.fromFirebaseAuthPromise(this.auth.login({ email, password }));
     }
 
-    signUp(email, password) {
+    signUp(email, password, role) {
         return this.fromFirebaseAuthPromise(this.auth.createUser({ email, password })
             .then(response => {
                 if (response.uid) {

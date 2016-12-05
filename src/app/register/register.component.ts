@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   form: FormGroup;
+  roleName: string= 'Customer';
 
   constructor(
     private fb: FormBuilder,
@@ -34,8 +35,9 @@ export class RegisterComponent implements OnInit {
 
   signUp() {
     const val = this.form.value;
+    const rn = this.roleName;
 
-    this.authService.signUp(val.email, val.password)
+    this.authService.signUp(val.email, val.password, rn)
       .subscribe(
       () => {
         console.log('User created successfully!');
