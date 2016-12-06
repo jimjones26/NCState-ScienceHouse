@@ -17,6 +17,7 @@ export class AuthGuard implements CanActivate {
       .map(authInfo => authInfo.isLoggedIn())
       .take(1)
       .do(allowed => {
+        console.log('from AuthGuard, is allowed? ', allowed);
         if (!allowed) {
           this.router.navigate(['/login']);
         }
